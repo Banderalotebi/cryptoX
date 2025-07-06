@@ -1,0 +1,9 @@
+{
+  "name": "wallet-frontend",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/wallet-frontend/src",
+  "projectType": "application",
+  "tags": ["scope:frontend", "type:app", "npm:react", "npm:wallet"],
+  "// targets": "to see all targets run: nx show project wallet-frontend --web",
+  "targets": {}
+}

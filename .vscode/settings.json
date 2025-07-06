@@ -1,3 +1,10 @@
 {
-    "nxConsole.generateAiAgentRules": true
+    "nxConsole.generateAiAgentRules": true,
+    "chat.mcp.serverSampling": {
+        "cryptoX/.vscode/mcp.json: nx-mcp": {
+            "allowedModels": [
+                "github.copilot-chat/gpt-4.1"
+            ]
+        }
+    }
 }

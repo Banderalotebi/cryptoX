@@ -1,1 +1,90 @@
-/* Your styles goes here. */
+.app {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.navbar {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.nav-brand h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.main-content {
+  padding: 40px 0;
+}
+
+.coming-soon {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 40px;
+  text-align: center;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.coming-soon h2 {
+  color: #1a1a1a;
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.coming-soon p {
+  color: #666;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+  }
+  
+  .nav-links {
+    gap: 16px;
+  }
+  
+  .nav-brand h1 {
+    font-size: 1.5rem;
+  }
+  
+  .main-content {
+    padding: 20px 0;
+  }
+  
+  .coming-soon {
+    margin: 0 16px;
+    padding: 40px 24px;
+  }
+}

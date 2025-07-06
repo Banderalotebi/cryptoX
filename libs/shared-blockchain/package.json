@@ -1,0 +1,19 @@
+{
+  "name": "@cryptox/shared-blockchain",
+  "version": "0.0.1",
+  "type": "commonjs",
+  "main": "./src/index.js",
+  "typings": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./src/index.js",
+      "default": "./src/index.js"
+    }
+  },
+  "dependencies": {
+    "ethers": "^6.15.0"
+  },
+  "peerDependencies": {
+    "ethers": "^6.15.0"
+  }
+}

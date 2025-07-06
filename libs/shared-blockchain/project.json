@@ -1,0 +1,29 @@
+{
+  "name": "@cryptox/shared-blockchain",
+  "sourceRoot": "libs/shared-blockchain/src",
+  "projectType": "library",
+  "tags": ["type:lib", "scope:shared", "npm:blockchain", "npm:ethereum", "npm:utilities"],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/shared-blockchain",
+        "main": "libs/shared-blockchain/src/index.ts",
+        "tsConfig": "libs/shared-blockchain/tsconfig.lib.json",
+        "assets": ["libs/shared-blockchain/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    },
+    "test": {
+      "executor": "@nx/vite:test",
+      "outputs": ["{options.reportsDirectory}"],
+      "options": {
+        "passWithNoTests": true,
+        "reportsDirectory": "../../coverage/libs/shared-blockchain"
+      }
+    }
+  }
+}

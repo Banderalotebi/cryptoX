@@ -13,9 +13,9 @@
       }
     },
     "serve": {
-      "executor": "@nx/node:node",
+      "executor": "nx:run-commands",
       "options": {
-        "buildTarget": "server-wallet:build"
+        "command": "cd apps/server-wallet && node backend/index.js"
       }
     },
     "compile": {

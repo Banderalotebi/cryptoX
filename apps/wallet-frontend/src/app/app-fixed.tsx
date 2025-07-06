@@ -2,7 +2,6 @@ import { Route, Routes, Link } from 'react-router-dom';
 import { WalletDashboard } from '../components/WalletDashboard';
 import { SendReceive } from '../components/SendReceive';
 import { TransactionHistory } from '../components/TransactionHistory';
-import { SmartContracts } from '../components/SmartContracts';
 import './app.module.css';
 
 export function App() {
@@ -25,7 +24,15 @@ export function App() {
           <Route path="/" element={<WalletDashboard />} />
           <Route path="/send-receive" element={<SendReceive />} />
           <Route path="/transactions" element={<TransactionHistory />} />
-          <Route path="/contracts" element={<SmartContracts />} />
+          <Route
+            path="/contracts"
+            element={
+              <div className="coming-soon">
+                <h2>Smart Contract Interactions</h2>
+                <p>Coming soon! Interact with smart contracts here.</p>
+              </div>
+            }
+          />
         </Routes>
       </main>
     </div>

@@ -7,6 +7,9 @@
     "test": "nx test",
     "start": "nx start server-wallet",
     "serve": "nx serve server-wallet",
+    "serve:frontend": "nx serve wallet-frontend",
+    "serve:all": "nx run-many --targets=serve --projects=server-wallet,wallet-frontend --parallel",
+    "dev": "npm run serve:all",
     "compile": "nx compile server-wallet",
     "deploy": "nx deploy server-wallet",
     "graph": "nx graph"
